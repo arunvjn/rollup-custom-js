@@ -1,4 +1,4 @@
-import { faker } from "@faker-js/faker";
+import * as faker from "@faker-js/faker";
 
 function checkFaker() {
     return faker.simpleFaker.date.future(3)
