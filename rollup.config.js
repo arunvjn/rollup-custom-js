@@ -4,8 +4,8 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 export default {
     input: 'main.js',
     output: {
-        dir: 'output',
+        dir: 'build',
         format: 'es'
     },
-    plugins: [babel({ babelHelpers: 'bundled' }), nodeResolve()]
+    plugins: [babel({ babelHelpers: 'bundled', exclude: 'node_modules/**' }), nodeResolve()]
 };
